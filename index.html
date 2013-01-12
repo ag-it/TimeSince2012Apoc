@@ -1,0 +1,19 @@
+<html>
+<head>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="moment.js"></script>
+<script type="text/javascript">
+	function clicked() {
+	var then = moment("20121221", "YYYYMMDD").fromNow();
+	console.log(then);
+	$("#parag").text(then + " since the end of the Mayan calendar!");
+	}
+</script>
+</head>
+<body>
+<div style="text-align:center">
+<p id="parag"></p><br />
+<input type="button" value="Press" onclick="clicked()" />
+</div>
+</body>
+</html>
